@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-body">
+    <div class="col-md-4">
+      {{article.votes}} Points
+    </div>
+    <div class="col-md-8">
+      <div class="card-title">
+        <a href="{{article.link}}">{{article.title}}</a>
+          <a href="{{article.link}}">({{article.domain()}})</a>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href (click)="voteUp()"><i class="glyphicon glyphicon-upload">upvote</i></a>
+        </li>
+        <li class="list-group-item">
+          <a href (click)="voteDown()"><i class="glyphicon glyphicon-download">downvote</i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
